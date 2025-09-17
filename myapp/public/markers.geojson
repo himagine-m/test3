@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "アイテムA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [500, 400]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "アイテムB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [200, 600]
+      }
+    }
+  ]
+}
