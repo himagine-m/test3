@@ -2,10 +2,13 @@ import { MapContainer, ImageOverlay, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
+
 // SVGサイズに合わせて座標系を定義
 const width = 1000
 const height = 800
 const bounds: L.LatLngBoundsExpression = [[0, 0], [height, width]]
+
+
 
 export default function App() {
   return (

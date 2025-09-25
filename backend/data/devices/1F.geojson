@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ap-1",
+        "name": "AP-1",
+        "type": "access_point",
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [134.0465, 34.3428]
+      }
+    }
+  ]
+}
