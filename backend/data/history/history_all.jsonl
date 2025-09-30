@@ -1,0 +1,1 @@
+{"action": "create", "floor": "1F", "device_id": "5871fe64-7de3-4f65-a503-ef1b6ee941a5", "feature": {"type": "Feature", "properties": {"name": "Printer-1", "type": "printer", "id": "5871fe64-7de3-4f65-a503-ef1b6ee941a5", "created_at": "2025-09-25T10:26:55Z", "updated_at": "2025-09-25T10:26:55Z"}, "geometry": {"type": "Point", "coordinates": [134.0466, 34.3429]}}, "before": null}
