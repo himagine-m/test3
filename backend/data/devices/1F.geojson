@@ -3,36 +3,91 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [620, 520] },
       "properties": {
-        "id": "ap-1",
-        "name": "AP-1",
-        "type": "access_point",
-        "created_at": "2024-01-01T00:00:00Z",
-        "updated_at": "2024-01-01T00:00:00Z"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          400,
-          400
-        ]
+        "id": "PC-001",
+        "type": "PC",
+        "system": "CTS",
+        "category": "専用システム",
+        "name": "CTS端末-営業01",
+        "user": "営業部",
+        "ip": "192.168.10.21",
+        "vlan": "VLAN10",
+        "model": "VersaPro",
+        "os": "Windows 10",
+        "floor": "1F",
+        "assetTag": "A-2025-0101",
+        "maintenance": true,
+        "connectedTo": "CON-03-45",
+        "uplinkTo": "SW-03",
+        "note": "",
+        "updated": "2025-09-01"
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [1260, 860] },
       "properties": {
-        "name": "Printer-1",
-        "type": "printer",
-        "id": "PR-1",
-        "created_at": "2025-09-25T10:26:55Z",
-        "updated_at": "2025-09-25T10:26:55Z"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          600,
-          600
-        ]
+        "id": "PRT-01",
+        "type": "Printer",
+        "system": "Printer",
+        "category": "一般",
+        "name": "一般大ゲラカラー",
+        "user": "営業部",
+        "ip": "192.168.10.80",
+        "vlan": "VLAN10",
+        "model": "RICOH IM C3000",
+        "floor": "1F",
+        "assetTag": "A-2025-0201",
+        "maintenance": true,
+        "connectedTo": "HUB-01",
+        "uplinkTo": "SW-03",
+        "note": "",
+        "updated": "2025-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [1000, 480] },
+      "properties": {
+        "id": "SW-03",
+        "type": "L2Switch",
+        "name": "L2SW-03",
+        "user": "情報システム",
+        "ip": "192.168.10.2",
+        "vlan": "TRUNK",
+        "model": "Cisco C1000",
+        "floor": "1F",
+        "assetTag": "A-2024-0003",
+        "maintenance": true,
+        "note": "",
+        "updated": "2025-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [800, 840] },
+      "properties": {
+        "id": "CON-03-45",
+        "type": "Outlet",
+        "name": "情報コンセント 03-45",
+        "floor": "1F",
+        "maintenance": false,
+        "uplinkTo": "SW-03",
+        "updated": "2025-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [950, 660] },
+      "properties": {
+        "id": "HUB-01",
+        "type": "HUB",
+        "name": "卓上HUB-01",
+        "floor": "1F",
+        "uplinkTo": "SW-03",
+        "maintenance": false,
+        "updated": "2025-09-01"
       }
     }
   ]
