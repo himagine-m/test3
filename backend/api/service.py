@@ -135,12 +135,13 @@ def _normalize_feature(obj: Dict[str, Any]) -> Dict[str, Any]:
     # フィールド直指定でも受け付け
     return {"type": "Feature", "properties": obj.get("properties", {}), "geometry": obj.get("geometry")}
 
-def _validate_feature_minimal(feature: Dict[str, Any]):
+def _validate_feature_minimal(feature):
     if feature.get("type") != "Feature":
         raise _bad_request("Feature.type must be 'Feature'")
     geom = feature.get("geometry")
-    if not isinstance(geom, dict) or "type" not in geom or "coordinates" not in geom:
-        raise _bad_request("Feature.geometry must include type and coordinates")
+    if geom is not None:
+        if not isinstance(geom, dict) or "type" not in geom or "coordinates" not in geom:
+            raise _bad_request("Feature.geometry must include type and coordinates")
     # 必須プロパティ例（必要に応じて拡張）
     props = feature.setdefault("properties", {})
     # 名称・種別など任意

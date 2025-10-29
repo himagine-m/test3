@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [620, 520] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          620,
+          520
+        ]
+      },
       "properties": {
         "id": "PC-001",
         "type": "PC",
@@ -21,34 +27,50 @@
         "connectedTo": "CON-03-45",
         "uplinkTo": "SW-03",
         "note": "",
-        "updated": "2025-09-01"
+        "updated": "2025-09-01",
+        "updated_at": "2025-10-25T02:42:04Z",
+        "created_at": "2025-10-25T02:42:04Z"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [1260, 860] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1260,
+          860
+        ]
+      },
       "properties": {
         "id": "PRT-01",
         "type": "Printer",
         "system": "Printer",
         "category": "一般",
-        "name": "一般大ゲラカラー",
+        "name": "大ゲラカラー",
         "user": "営業部",
         "ip": "192.168.10.80",
         "vlan": "VLAN10",
-        "model": "RICOH IM C3000",
+        "model": "RICOH IM C300",
         "floor": "1F",
         "assetTag": "A-2025-0201",
         "maintenance": true,
         "connectedTo": "HUB-01",
         "uplinkTo": "SW-03",
         "note": "",
-        "updated": "2025-09-01"
+        "updated": "2025-09-01",
+        "updated_at": "2025-10-28T12:35:37Z",
+        "created_at": "2025-10-28T12:35:37Z"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [1000, 480] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1000,
+          480
+        ]
+      },
       "properties": {
         "id": "SW-03",
         "type": "L2Switch",
@@ -66,28 +88,44 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [800, 840] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          800,
+          840
+        ]
+      },
       "properties": {
         "id": "CON-03-45",
         "type": "Outlet",
         "name": "情報コンセント 03-45",
         "floor": "1F",
-        "maintenance": false,
+        "maintenance": "true",
         "uplinkTo": "SW-03",
-        "updated": "2025-09-01"
+        "updated": "2025-09-01",
+        "updated_at": "2025-10-28T12:36:21Z",
+        "created_at": "2025-10-28T12:36:21Z"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [950, 660] },
       "properties": {
-        "id": "HUB-01",
-        "type": "HUB",
-        "name": "卓上HUB-01",
+        "created_at": "2025-10-25T03:31:18Z",
         "floor": "1F",
-        "uplinkTo": "SW-03",
-        "maintenance": false,
-        "updated": "2025-09-01"
+        "id": "HUB-01",
+        "maintenance": "true",
+        "name": "HUB-001",
+        "type": "HUB",
+        "updated": "2025-09-09",
+        "updated_at": "2025-10-28T12:34:21Z",
+        "uplinkTo": "SW-03"
+      },
+      "geometry": {
+        "coordinates": [
+          950,
+          660
+        ],
+        "type": "Point"
       }
     }
   ]
